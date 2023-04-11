@@ -221,3 +221,21 @@ switchAccordion = function(e) {
     accordionToggles[i].addEventListener('click', switchAccordion, false);
   }
 })();
+
+
+
+Splitting();
+
+gsap.from (".random .char", {
+	duration: 1.25,
+	delay: 3.5,
+	opacity: 0,
+//	rotation: -30,
+	ease: "elastic",
+	stagger: {
+		grid: [1,12],
+		from: "random",
+		amount: 1, 
+	    y: "-50",
+  },
+});
